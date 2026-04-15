@@ -16,8 +16,27 @@ const Banner = () => {
         </button>
       </div>
       {/* Banner-card */}
-      <div>
-
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+        {/*card-1 */}
+        <div className=" h-32 flex flex-col items-center justify-center shadow-2xl py-20 rounded-xl text-center">
+            <h3 className="text-3xl font-bold text-[#244D3F]">10</h3>
+            <p className="text-[#64748B]">Total Friends</p>
+        </div>
+        {/*card-2 */}
+        <div className=" h-32 flex flex-col items-center justify-center shadow-2xl py-20 rounded-xl text-center">
+            <h3 className="text-3xl font-bold text-[#244D3F]">3</h3>
+            <p className="text-[#64748B]">On Track</p>
+        </div>
+        {/*card-3 */}
+        <div className=" h-32 flex flex-col items-center justify-center shadow-2xl py-20 rounded-xl text-center">
+            <h3 className="text-3xl font-bold text-[#244D3F]">6</h3>
+            <p className="text-[#64748B]">Need Attention</p>
+        </div>
+        {/*card-4 */}
+        <div className=" h-32 flex flex-col items-center justify-center shadow-2xl py-20 rounded-xl text-center">
+            <h3 className="text-3xl font-bold text-[#244D3F]">12</h3>
+            <p className="text-[#64748B]">Interactions This Month</p>
+        </div>
       </div>
     </div>
   );
