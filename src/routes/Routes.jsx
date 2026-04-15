@@ -4,7 +4,8 @@ import Homepage from "../components/Homepage/Homepage";
 import Timeline from "../pages/Timeline";
 import Stats from "../pages/Stats";
 import ErrorPage from "../pages/errorPage/ErrorPage";
-import Friends from "../pages/homepage/Friends/Friends";
+
+
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
       {
         path: '/stats',
         Component: Stats
-      }
+      },
     ],
     errorElement: <ErrorPage/>
   }
