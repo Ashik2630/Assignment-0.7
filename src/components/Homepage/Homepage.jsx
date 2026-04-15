@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Banner from '../../pages/homepage/Banner';
 
 const Homepage = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className='container mx-auto border h-[50vh]'>
+            <Banner/>
         </div>
     );
 };
