@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Legend, Pie, PieChart, Tooltip } from "recharts";
 import { FriendContext } from "../context/FriendContext";
 
 const Stats = () => {
+
+
+    const { call, text, video } = useContext(FriendContext);
+
   // #region Sample data
   const data = [
-    { name: "Call", value: 400, fill: "#244d3f" },
-    { name: "Text", value: 200, fill: "#7f37f5" },
-    { name: "Video", value: 600, fill: "#37a163" },
+    { name: "Call", value: call.length, fill: "#244d3f" },
+    { name: "Text", value: text.length, fill: "#7f37f5" },
+    { name: "Video", value: video.length, fill: "#37a163" },
   ];
 
   return (
