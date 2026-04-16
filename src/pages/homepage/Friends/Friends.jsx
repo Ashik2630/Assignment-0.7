@@ -5,9 +5,8 @@ import Friend from './Friend';
 const friendPromise = fetch('/friends.json').then(res => res.json());
 
 const Friends = () => {
-
+    
     const friends = use(friendPromise);
-    console.log(friends)
 
     return (
         <div className='mt-20'>
