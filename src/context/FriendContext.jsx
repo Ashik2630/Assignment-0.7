@@ -1,13 +1,17 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { createContext, useState } from "react";
+import React, { createContext, use, useState } from "react";
 import { toast } from "react-toastify";
 
 export const FriendContext = createContext();
+
+const friendPromise = fetch('/friends.json').then(res => res.json());
 
 const FriendProvider = ({ children }) => {
   const [call, setCall] = useState([]);
   const [text, setText] = useState([]);
   const [video, setVideo] = useState([]);
+
+  const friends = use(friendPromise);
 
 //   Call-handlerButton
   const handleCallButton = (currentCall) => {
@@ -95,7 +99,8 @@ const FriendProvider = ({ children }) => {
     handleTextButton,
     video,
     setVideo,
-    handleVideoButton
+    handleVideoButton,
+    friends
   };
   return (
     <FriendContext.Provider value={data}>{children}</FriendContext.Provider>

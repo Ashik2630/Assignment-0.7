@@ -6,7 +6,7 @@ import { ScaleLoader } from 'react-spinners';
 const Homepage = () => {
     return (
         <div className='container mx-auto'>
-            <Banner/>
+            <Banner />
             <Suspense fallback={<span className='flex justify-center m-20'><ScaleLoader/></span>}>
                 <Friends/>
             </Suspense>

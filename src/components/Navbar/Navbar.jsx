@@ -3,6 +3,7 @@ import { IoMdHome } from "react-icons/io";
 import { RiTimeLine } from "react-icons/ri";
 import { TfiStatsUp } from "react-icons/tfi";
 import { NavLink } from "react-router";
+import navbarImg from '../../assets/logo.png'
 
 const Navbar = () => {
   const links = (
@@ -66,8 +67,11 @@ const Navbar = () => {
               <li>{links}</li>
             </ul>
           </div>
-          <a className=" text-2xl font-bold">
+          {/* <a className=" text-2xl font-bold">
             Keen<span className="font-semibold text-[#244D3F]">Keeper</span>
+          </a> */}
+          <a href="/">
+          <img src={navbarImg} alt="" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">{links}</div>

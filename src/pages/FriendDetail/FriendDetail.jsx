@@ -42,7 +42,14 @@ const FriendDetail = () => {
 
           <h3 className="text-lg font-bold">{name}</h3>
 
-          <span className="inline-block bg-red-100 text-red-500 text-xs px-3 py-1 rounded-full mt-2">
+          <span className={`inline-block text-white text-[14px] px-3 py-1 rounded-full mt-2 ${status === "On-Track"
+                ? "bg-[#244d3f]"
+                : status === "Overdue"
+                  ? "bg-[#ef4444]"
+                  : status === "Almost Due"
+                    ? "bg-[#efad44]"
+                    : "bg-gray-300"
+            }`}>
             {status}
           </span>
 
@@ -52,7 +59,7 @@ const FriendDetail = () => {
                 key={index}
                 className="bg-green-100 text-green-600 text-xs px-3 py-1 rounded-full"
               >
-                {tag}
+                 #{tag.toUpperCase()}
               </span>
             ))}
           </div>
