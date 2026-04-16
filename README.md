@@ -1,16 +1,26 @@
-# React + Vite
+# 📱 Friend Interaction Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Description
 
-Currently, two official plugins are available:
+This project is a simple and interactive web application where I track my daily interactions with friends — like calls, texts, and video chats. The idea came from my own need to keep track of how often I stay connected with people close to me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It shows different types of communication in a clean UI, along with some basic statistics and timeline features to visualize activity.
 
-## React Compiler
+## 🚀 Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* Tailwind CSS
+* Daisy UI
+* React Router
+* Context API
+* React Toastify
+* React Icons
+* Recharts (for data visualization)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+* 📊 **Activity Tracking:** Track calls, texts, and video interactions separately
+* 📈 **Statistics Dashboard:** Visual representation of interaction data using charts
+* 🕒 **Timeline View:** See interactions in a clean and organized timeline format
+
