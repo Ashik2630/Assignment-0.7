@@ -21,7 +21,7 @@ const Banner = () => {
         </button>
       </div>
       {/* Banner-card */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 px-3 ">
         {/*card-1 */}
         <div className=" h-32 flex flex-col items-center justify-center shadow-sm py-20 rounded-xl text-center">
           <h3 className="text-3xl font-bold text-[#244D3F]">

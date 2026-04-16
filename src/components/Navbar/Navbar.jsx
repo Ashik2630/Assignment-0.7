@@ -67,9 +67,6 @@ const Navbar = () => {
               <li>{links}</li>
             </ul>
           </div>
-          {/* <a className=" text-2xl font-bold">
-            Keen<span className="font-semibold text-[#244D3F]">Keeper</span>
-          </a> */}
           <a href="/">
           <img src={navbarImg} alt="" />
           </a>
