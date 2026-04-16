@@ -30,7 +30,7 @@ const Timeline = () => {
   });
 
   return (
-    <div className="container mx-auto my-20 space-y-5">
+    <div className="container mx-auto my-20 space-y-5 px-5">
       <h1 className="text-4xl font-bold">Timeline</h1>
       {/* Shorting */}
       <div className="dropdown dropdown-start">
@@ -91,7 +91,7 @@ const Timeline = () => {
             <p>
               {item.type === "call" && `${item.name} is Called`}
               {item.type === "text" && `${item.name} is Texted`}
-              {item.type === "video" && `${item.name} had a Video Call`}
+              {item.type === "video" && `${item.name} a Video Call`}
             </p>
 
             <p>

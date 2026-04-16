@@ -15,13 +15,13 @@ const Stats = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-10">
-      <h1 className="text-5xl font-bold">Friendship Analytics</h1>
-      <div className="relative flex justify-center my-10  shadow rounded-md  border border-slate-300 p-10">
-        <h3 className="text-2xl absolute top-8 left-10 text-[#244D3F] font-semibold">By Interaction Type</h3>
+    <div className="container mx-auto mt-10 px-5">
+      <h1 className=" text-3xl lg:text-5xl font-bold">Friendship Analytics</h1>
+      <div className="relative flex justify-center my-10  shadow rounded-md  border border-slate-300 px-10 py-15">
+        <h3 className="text-xl lg:text-2xl absolute ml-2 left-1 top-4 lg:top-8 lg:left-10 text-[#244D3F] font-semibold">By Interaction Type</h3>
         <PieChart
           style={{
-            width: "100%",
+            width: "80%",
             maxWidth: "500px",
             maxHeight: "80vh",
             aspectRatio: 1,

@@ -18,7 +18,8 @@ const FriendProvider = ({ children }) => {
     // Call exist
     const isExistCall = call.find((c) => c.id === currentCall.id);
     if (isExistCall) {
-      toast.error("The Call is already exist");
+     setCall([...call, currentCall]);
+      toast.success(`${currentCall.name} is called`)
     } else {
       setCall([...call, currentCall]);
       toast.success(`${currentCall.name} is called`)
@@ -29,7 +30,8 @@ const FriendProvider = ({ children }) => {
     // Text exist
     const isExistText = text.find((t) => t.id === currentText.id);
     if (isExistText) {
-      toast.error("The Call is already exist");
+      setText([...text, currentText]);
+      toast.success(`${currentText.name} is Text`)
     } else {
       setText([...text, currentText]);
       toast.success(`${currentText.name} is Text`)
@@ -40,7 +42,8 @@ const FriendProvider = ({ children }) => {
     // video exist
     const isExistText = video.find((v) => v.id === currentVideo.id);
     if (isExistText) {
-      toast.error("The Video Call is already exist");
+      setVideo([...video, currentVideo]);
+      toast.success(`${currentVideo.name} is Video Call`)
     } else {
       setVideo([...video, currentVideo]);
       toast.success(`${currentVideo.name} is Video Call`)
