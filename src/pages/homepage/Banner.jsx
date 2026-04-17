@@ -12,7 +12,7 @@ const Banner = () => {
         <h1 className="text-3xl lg:text-5xl font-bold">
           Friends to keep close in your life
         </h1>
-        <p className="text-[#64748B] px-2 w-125 mx-auto">
+        <p className="text-[#64748B] px-2 mx-auto">
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the  relationships that matter most.
         </p>
